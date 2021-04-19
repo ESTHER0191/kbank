@@ -1,0 +1,124 @@
+/*해당 사이트의 메인 페이지에만 적용할 초기화 스타일*/
+@charset "utf-8";
+
+/*서버마다 내용이 달라짐, 실제 메인페이지 내용들*/
+#cont{}
+#cont .mainBan{
+    background-image: url(../img/img_main_kn2.png);
+    height: 360px;
+    position: relative;
+}
+#cont .mainBan .pos{
+    position: absolute; bottom: 0; left: 0; width: 100%;
+}
+#cont .mainBan ul{
+    background-color: rgba(255,255,255,0.5);
+    width: 80%; margin: auto; padding: 12px; overflow: auto; 
+    /*position: absolute; bottom: 0;*/
+}
+#cont .mainBan ul li{
+   float: left; width:25%; text-align: center; 
+}
+#cont .mainBan ul li a{
+    padding: 14px; display: block;  margin-right: 3px;/*(li안에서 margin: 3px이 들어가서 옆에 항목들과 공간이 생김)*/
+    background-color: #fff;
+}
+#cont .mainBan ul li a:hover{
+    background-color: #979088; color: #fff;
+    transition: 0.3s;
+}
+
+#cont .boardBox{
+    display: flex;
+    padding-top: 56px;
+}
+#cont .boardBox section{
+    width: 33.3333%;
+    border-right: 1px solid #eaeaea;
+    padding: 0 21px;
+    position: relative;
+}
+#cont .boardBox section:last-child{
+    border: none;
+}
+#cont .boardBox section h2{
+    font-size: 15px;
+    padding-bottom: 24px;
+    font-weight: 400;
+}
+#cont .boardBox section ul{}
+#cont .boardBox section ul li{
+    padding-bottom: 27px;
+    font-size: 15px;
+}
+#cont .boardBox section ul li:last-child{
+    padding-bottom: 15px;
+}
+#cont .boardBox section ul li p{}
+#cont .boardBox section ul li .date{
+    color: #918e95;
+    font-size: 13px;
+}
+#cont .boardBox section ul li .tit{
+    width: 255px;
+    white-space: nowrap; /*너비보다 글이 길 경우 줄바꿈이 일어나는데, 줄바꿈 안 일어나게 하는 요소*/
+    overflow: hidden; /*너비보다 긴 글일 경우 글이 튀어나가는데, 튀어나간것을 안보이게 하는 용도*/
+    text-overflow: ellipsis  /*글이 더 읽는데 ...으로 표시해주는거*/
+}
+#cont .boardBox section ul li .tit:hover{
+    color:#ef5f7a;
+}
+
+#cont .boardBox section .more{
+    color: #918e95;
+    position: absolute;
+    top: 0; right: 21px;
+    font-size: 12px;
+}
+#cont .boardBox section .more:hover{
+    color: #333;
+}
+
+
+
+#cont .boardBox .notice{}
+#cont .boardBox .event{}
+#cont .boardBox .event h2{color:#0063b4;}
+#cont .boardBox .product{}
+
+
+
+#cont .adBox{
+    padding-top: 52px;
+    padding-bottom: 100px;
+   /* overflow: auto;*/
+    height: 136px;
+}
+#cont .adBox a{}
+#cont .adBox img{
+    float: left;
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

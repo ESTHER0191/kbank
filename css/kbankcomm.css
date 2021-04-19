@@ -1,0 +1,260 @@
+@charset "utf-8";
+/*해당 사이트의 모든 페이지에 적용할 공통(헤더,푸터) 스타일*/
+
+/*헤더, 푸터는 페이지가 달라져도 디자인이 바뀌지 않음*/
+
+#hd{}
+#hd .top{
+    text-align: right; 
+    background-color: #f7f8f3; 
+    padding-top: 10px; padding-bottom: 8px;
+    border-bottom: 1px solid #eeeeec;
+}
+#hd .top a{font-size: 12px; color: #818680; }
+#hd .top2{
+    padding: 15px 0;
+    height:50px;
+}
+#hd .top2 h1{
+    float: left;
+}
+#hd .top2 nav{float: left; padding-left: 140px; }
+#hd .top2 nav .depth1>li{
+    padding: 8px 27px; float: left;
+    font-weight: 400; 
+}
+
+#hd .top2 nav .depth1>li:last-child{color: #868895;}
+/*#hd .top2 nav .depth1>li:hover .depth2{
+    display: block;
+}*/
+#hd .top2 nav .depth1>li>a{
+    font-weight: 500; font-size: 15px; 
+}
+#hd .top2 nav .depth1>li>a:hover{
+    color: #e65e72;
+    border-bottom: 3px solid #e65e72;
+    padding-bottom: 8px; 
+}
+.depth1 li:nth-child(3) .depth2 li:nth-child(5), li:nth-child(6), li:nth-child(7){
+    padding-top: 30px;
+}
+#hd .top2 nav .depth1 li:nth-child(3) .depth2>ul>li:nth-child(4){
+    border-right: 0;
+}
+#hd .top2 nav .depth2{
+    position: absolute;
+    top: 40px; left: 0;
+    z-index: 20;
+    display:none;
+    height: 100px;
+    padding-top: 30px;
+    width: 100%
+  
+}
+#hd .top2 nav .depth2>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#hd .top2 nav .depth2>ul>li{
+     
+    width: 180px; height: 192px;
+    border-right: 1px solid #eaeaea;
+    padding-left: 15px;
+   
+    
+}
+#hd .top2 nav .depth2>ul>li:last-child{
+    border-right: 0;
+}
+#hd .top2 nav .depth3{margin-top: 18px;}
+#hd .top2 nav .depth3>li{
+    padding: 3px 0;
+    font-weight: 100;
+    font-size: 13px; 
+}
+#hd .top2 nav .depth3>li:hover{
+    color: #e55b72;
+}
+
+.topMenubg{
+    height: 500px; width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 5px #ccc;
+    position: absolute; top: 100px; left: 0;
+    z-index: 10;
+/*    display:none;*/
+}
+
+#hd .top2 button{float: right; margin-top: 14px;}
+
+#hd::after{content:''; display: block; clear: both;}
+
+
+#searchBox{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0; left:0;
+    width: 100%;  height: 100%;
+    display: flex;
+    justify-content: center; /*자식을 좌우로 가운데로 이동*/
+    align-items: center;   /*자식을 위아래 가운데*/
+    visibility: hidden; /*시작할때는 안보이므로*/
+}
+#searchBox .inBox{
+    background-color: #fff;
+    width: 500px; height: 650px;
+    position: relative;
+}
+
+#searchBox .inBox h4{
+    border-bottom: 1px solid #c7c9d6;
+    padding: 18px;
+    font-weight: 300;
+    font-size: 18px;
+}
+#searchBox .inBox .btnClose{
+    position: absolute;
+    top: 18px; right: 18px;
+    /*      outline: 0; 웹접근성에 떨어져서 하면x*/
+}
+#searchBox .inBox ul{
+    border-bottom: 1px solid #a6a6a6;
+    display: flex;
+    text-align: center;
+    
+}
+#searchBox .inBox ul li{
+    width: 33.3333%;
+    color: #8f8f8f;
+    font-size: 14px;
+    
+}
+#searchBox .inBox ul li a{
+    display: block;   /*블럭이어야 패딩을 제대로 가질 수 있다*/
+    padding: 16px 0;
+}
+#searchBox .inBox ul li.act{
+    border-bottom: 3px solid #eb596e;
+    color: #eb596e;
+    font-weight: 500;
+}
+
+
+#searchBox .inBox div[class^=tabCon]{
+    background-color: #f5f6f1;
+    padding: 10px 12px;
+}
+#searchBox .inBox .tabCon1{}
+#searchBox .inBox .tabCon1 input{
+    background-color: #7f8fa6;
+    color: #fff;
+    width: 100%;
+    border: 0;
+    padding: 14px; box-sizing: border-box;
+    padding-right: 12px;
+}
+#searchBox .inBox .tabCon1 input::placeholder{
+    color: #fffaff;
+}
+#searchBox .tabCon1 form{
+    position: relative;
+}
+#searchBox .inBox .tabCon1 button{
+    position: absolute;
+    top: 12px; right: 12px;
+    
+}
+
+
+
+#searchBox .inBox .tabCon2{display:none;}
+#searchBox .inBox .tabCon3{display:none;}
+#searchBox .mess{
+    color: #7c898f;
+    font-size: 13px;
+    padding: 10px 20px; 
+}
+
+
+
+#ft{
+    clear: both;
+    background-color: #454d5a;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 25px;
+    height: 228px;
+}
+#ft .ft1{
+
+    width: 800px;
+    float: left;
+}
+
+#ft .ft1 .cust{}
+#ft .ft1 .cust span{
+    font-weight: 400;
+    font-size: 15px;
+}
+#ft .ft1 .cust span:nth-child(2){
+    display: inline-block;
+    padding-left:20px; padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #fff;
+    line-height: 0.8;
+}
+
+#ft .ft1 .cust span:last-child{
+    padding-left: 20px;
+}
+#ft .ft1 nav{}
+#ft .ft1 nav ul{}
+#ft .ft1 nav ul li{
+    float: left;
+    font-size: 12px;
+    padding-right: 16px; margin-right: 16px;
+    border-right: 1px solid #fff;
+    line-height: 0.8;
+    margin-top: 26px;
+}
+#ft .ft1 nav ul li:last-child{
+    border-right: 0;
+    padding-right: 0; margin-right: 0;
+}
+#ft .ft1 nav ul li a{}
+#ft .ft1 .copy{
+    clear: both;
+    padding-top: 14px;
+    color: #a2a2ae;
+    font-size: 12px;
+}
+
+#ft .ft2{
+    width: 140px;
+    float: right;
+}
+#ft .ft2 ul{}
+#ft .ft2 ul li{
+    float: left;
+    padding-right: 14px;
+}
+
+#ft .ft3{
+    clear: both;
+    font-size: 13px;
+    font-weight: 200;
+    padding-top: 25px;
+}
+#ft .ft3 img{
+    float: left;
+    padding-right: 2px;
+
+  
+}
+
+
+
+
+

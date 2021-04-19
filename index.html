@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>케이뱅크</title>
+    <link rel="stylesheet" href="css/kbankreset.css">
+    <link rel="stylesheet" href="css/kbankcomm.css">
+    <link rel="stylesheet" href="css/kbankmain.css">
+    <script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
+    <script src="js/top-menu.js"></script>
+    <script src="js/search.js"></script>
+</head>
+
+<body>
+    <header id="hd">
+        <div class="top">
+            <!--배경색이100%로 있는 부분-->
+            <div class="wrap">
+                <!--940px화면 안에 적혀질 내용들이 있는 부분, div는 꾸미기 위해 쓰는 것-->
+                <a href="#">로그인</a>
+            </div>
+        </div>
+        <div class="top2">
+            <div class="wrap">
+                <!--940px화면 안에 적혀질 내용들이 있는 부분-->
+                <h1>
+                    <a href="index.html"><img src="img/logo2.png" alt="케이뱅크"></a>
+                </h1>
+                <nav>
+                    <ul class="depth1">
+                        <!--네브 메뉴 호버 시 펼쳐지는 depth메뉴들-->
+                        <li>
+                            <a href="#">개인뱅킹</a>
+                            <div class="depth2">
+                            <ul>
+                                <li>
+                                    <a href="#">조회</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">전체 조회하기</a></li>
+                                        <li><a href="#">예금 적금</a></li>
+                                        <li><a href="#">대출</a></li>
+                                        <li><a href="#">카드</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">이체</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">이체하기</a></li>
+                                        <li><a href="#">자동이체</a></li>
+                                        <li><a href="#">대량이체</a></li>
+                                        <li><a href="#">이체결과</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">퀵송금</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">서비스안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">뱅킹관리</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">계좌관리</a></li>
+                                        <li><a href="#">입출금통지서비스</a></li>
+                                        <li><a href="#">무카드거래서비스</a></li>
+                                        <li><a href="#">증명서발급</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">금융몰</a>
+                            <div class="depth2">
+                               <ul>
+                                <li>
+                                    <a href="#">예금·적금</a>
+                                    <ul class="depth3">
+                                        <li>
+                                            <a href="#">듀얼k 입출금통장</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">뮤직k 정기예금</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">코드k 정기예금</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">플러스k 정기예금</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">플러스k 자유적금</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">대출</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">예금·적금 담보대출</a></li>
+                                        <li><a href="#">미니k 마이너스통장</a></li>
+                                        <li><a href="#">슬림k 중금리대출</a></li>
+                                        <li><a href="#">직장인k 신용대출</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">카드</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">카드신청 및 등록</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">고객센터</a>
+                            <div class="depth2">
+                               <ul>
+                                <li><a href="">간편신규</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">간편 신규</a></li>
+                                        <li><a href="#">긴급 이체</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">일반상담</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">자주하는 질문</a></li>
+                                        <li><a href="#">전화상담 신청</a></li>
+                                        <li><a href="#">이메일 문의</a></li>
+                                        <li><a href="#">톡상담</a></li>
+                                        <li><a href="#">원격지원서비스</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">사고/분실신고</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">전화접수 안내</a></li>
+                                        <li><a href="#">체크카드 분실신고</a></li>
+                                        <li><a href="#">OTP 분실신고</a></li>
+                                        <li><a href="#">뱅킹서비스 긴급중지</a></li>
+                                        <li><a href="#">사고신고 관리</a></li>
+                                        <li><a href="#">회원 탈퇴</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">재신고</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">금융거래목적 증빙자료 제출</a></li>
+                                        <li><a href="#">비과세 증빙자료 제출</a></li>
+                                        <li><a href="#">기타 재신고</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">금융고객보호</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">금융소비자 보호</a></li>
+                                        <li><a href="#">고객정보보호정책</a></li>
+                                    </ul>
+
+                                </li>
+                                <li><a href="">자료실</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">서식자료실</a></li>
+                                        <li><a href="#">약관자료실</a></li>
+                                        <li><a href="#">상품공시실</a></li>
+                                        <li><a href="#">보호금융상품등록부</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">이용안내</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">고객가이드</a></li>
+                                        <li><a href="#">서비스 이용안내</a></li>
+                                        <li><a href="#">금리안내</a></li>
+                                        <li><a href="#">금융계산기</a></li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">인증센터</a>
+                            <div class="depth2">
+                               <ul>
+                                <li><a href="#">OTP인증센터</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">OTP인증센터 안내</a></li>
+                                        <li><a href="#">OTP정보조회</a></li>
+                                        <li><a href="#">OTP발급신청</a></li>
+                                        <li><a href="#">OTP등록</a></li>
+                                        <li><a href="#">OTP관리</a></li>
+                                    </ul>
+                                    
+                                </li>
+                                <li><a href="#">공인인증센터</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">공인인증서 안내</a></li>
+                                        <li><a href="#">공인인증서 발급/재발급</a></li>
+                                        <li><a href="#">타행/타기관공인인증서 등록/해제</a></li>
+                                        <li><a href="#">OTP등록</a></li>
+                                        <li><a href="#">OTP관리</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">전체메뉴</a></li>
+                    </ul>
+                </nav>
+                <button class="btnSearch">
+                    <!-- 이 버튼을 누르면 searchBox 창이 새로 뜸, 지금은 보이지 않기 때문에 버튼으로 만들어 놓고 하단에 클릭시 뜨는 창 화면 만들것-->
+                    <img src="img/head_search.gif" alt="검색">
+                </button>
+            </div>
+            <div class="topMenubg"></div>
+
+        </div>
+
+    </header>
+
+    <!--중간영역-->
+    <div id="cont">
+
+        <div class="wrap">
+            <!--940안에 들어옴-->
+            <div class="mainBan">
+                <!--이미지는 백그라운드 이미지로 넣을 예정-->
+                <div class="pos">
+                    <!--위치때문에 만들음-->
+                    <ul>
+                        <!--흰색 반투명 배경으로 처리하고, a나 li를 흰색 바탕으로 처리-->
+                        <li><a href="#">조회하기</a></li>
+                        <li><a href="#">이체하기</a></li>
+                        <li><a href="#">대출</a></li>
+                        <li><a href="#">뱅킹관리</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="boardBox">
+                <section class="notice">
+                    <h2>공지사항</h2>
+                    <ul>
+                        <li>
+                            <p class="date">2017.04.11</p>
+                            <p class="tit">
+                                <!--날짜에는 링크가 안걸려 있기 때문에 제목에만 a태그-->
+                                <a href="#">
+                                    직장인k 신용대출 소득확인 관련 안내
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="date">2017.04.11</p>
+                            <p class="tit">
+                                <!--날짜에는 링크가 안걸려 있기 때문에 제목에만 a태그-->
+                                <a href="#">
+                                    주민등록증 진위확인 서비스 일시중단 안내
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="date">2017.04.11</p>
+                            <p class="tit">
+                                <!--날짜에는 링크가 안걸려 있기 때문에 제목에만 a태그-->
+                                <a href="#">
+                                    휴대폰 본인인증 서비스 점검(5/12 00시부터)
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="date">2017.04.11</p>
+                            <p class="tit">
+                                <!--날짜에는 링크가 안걸려 있기 때문에 제목에만 a태그-->
+                                <a href="#">
+                                    SKT 휴대폰 본인인증 서비스 점검(05/19 금요일부터)
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="#" class="more">더보기</a>
+                </section>
+                <section class="event">
+                    <h2>이벤트</h2>
+                    <ul>
+                        <li>
+                            <p class="date">2017.04.28 ~ 2017.06.30</p>
+                            <p class="tit">
+                                <!--날짜에는 링크가 안걸려 있기 때문에 제목에만 a태그-->
+                                <a href="#">
+                                    체크카드 발급 GS25 1만원 상품권 이벤트
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="date">2017.04.28 ~ 2017.06.30</p>
+                            <p class="tit">
+                                <!--날짜에는 링크가 안걸려 있기 때문에 제목에만 a태그-->
+                                <a href="#">
+                                    케이뱅크 공식 페이스북 오픈
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="#" class="more">더보기</a>
+                </section>
+                <section class="product">
+                    <h2>상품 공시실</h2>
+                    <ul>
+                        <li>
+                            <p class="date">2017.04.14</p>
+                            <p class="tit">
+                                <!--날짜에는 링크가 안걸려 있기 때문에 제목에만 a태그-->
+                                <a href="#">
+                                    [대출] 미니K 마이너스 통장
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="date">2017.04.14</p>
+                            <p class="tit">
+                                <!--날짜에는 링크가 안걸려 있기 때문에 제목에만 a태그-->
+                                <a href="#">
+                                    [카드] K bank 체크카드 통신캐시백형
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="date">2017.04.14</p>
+                            <p class="tit">
+                                <!--날짜에는 링크가 안걸려 있기 때문에 제목에만 a태그-->
+                                <a href="#">
+                                    [예금] 플러스 K 정기예금
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="date">2017.04.14</p>
+                            <p class="tit">
+                                <!--날짜에는 링크가 안걸려 있기 때문에 제목에만 a태그-->
+                                <a href="#">
+                                    [예금] 플러스 K 자유적금
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="#" class="more">더보기</a>
+                </section>
+            </div>
+            <!--.boardBox끝-->
+
+            <div class="adBox">
+                <a href="#"><img src="img/img_PC_login_npay.png" alt="엔페이"></a>
+                <a href="#"><img src="img/img_pc_login_shinsegae.png" alt="신세계"></a>
+            </div>
+            <!--.adBox 끝-->
+
+        </div>
+        <!--.wrap 끝-->
+    </div>
+    <!--#cont 끝 -->
+
+    <!--푸터영역-->
+    <footer id="ft">
+        <div class="wrap">
+            <div class="ft1">
+                <p class="cust">
+                    <!--한줄이지만, 사이사이 여백을 주기 위해 span태그로 묶음, span태그는 줄바꿈x-->
+                    <span>고객센터</span>
+                    <span>은행 1522-1000</span>
+                    <span>카드 1522-1155</span>
+                </p>
+                <nav>
+                    <ul>
+                        <li><a href="#">은행소개</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <!--로그인할거면 이부분 무조건 있어야함, 법적으로 정해짐-->
+                        <li><a href="#">약관자료실</a></li>
+                        <li><a href="#">상품공시실</a></li>
+                        <li><a href="#">보호금융상품등록부</a></li>
+                        <li><a href="#">경영공시실</a></li>
+                        <li><a href="#">사고신고</a></li>
+                        <li><a href="#">전자민원접수</a></li>
+                    </ul>
+                </nav>
+                <p class="copy">Copyright K bank. all rights reserved.</p>
+            </div>
+            <div class="ft2">
+                <ul>
+                    <li><a href="#"><img src="img/sns_facebook_p.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="img/sns_blog_p.png" alt="블로그"></a></li>
+                    <li><a href="#"><img src="img/sns_youtube_p.png" alt="유투브"></a></li>
+                </ul>
+            </div>
+            <div class="ft3">
+                <img src="img/mark_wa.png" alt="웹접근성 마크">
+                2017 웹접근성 <br> 우수사이트 인증
+            </div>
+        </div>
+    </footer>
+
+
+    <!--검색하기영역-->
+    <div id="searchBox">
+        <!--돋보기 들어가야할 부분, 클릭시 화면이 새로 떠서 밑으로 따로 뺌-->
+        <div class="inBox">
+            <h3>검색하기</h3>
+            <!--나중에 css로 border-bottom으로 선넣을 예정-->
+            <button class="btnClose"><img src="img/btn_w_close.png" alt=""></button>
+            <ul>
+                <li class="act"><a href="#">이체내역</a></li>
+                <!--분홍색으로 활성화 되어있음-->
+                <li ><a href="#">메뉴/상품</a></li>
+                <li ><a href="#">자주묻는 질문</a></li>
+            </ul>
+            <div class="tabCon1">
+                <!--이체내역 영역, class는 디자인 하는 부분을 나누기 위해 씀-->
+                <form action="#" method="post" name="tabcon1">
+                    <!--여기서 쓰는 name 은 서버에 전송하기 위해 씀-->
+                    <label for="uinfor" class="hide">사용자 이름 또는 계쫘</label>
+                        <input type="text" placeholder="이름, 계좌번호를 입력해 주세요" name="userName">
+                    
+                    <button type="button" class="btnSearch">
+                        <img src="img/icon_sear.png" alt="검색">
+                    </button>
+                </form>
+                <p class="mess">이체내역은 최근 1개월 내역만 검색됩니다.</p>
+            </div>
+            <div class="tabCon2">
+                <p class="mess">메뉴/상품 검색 준비중</p>
+            </div>
+            <div class="tabCon3">
+                <p class="mess">자주묻는질문 준비중</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
